@@ -1,0 +1,13 @@
+$main_family: 'Rubik Vinyl', cursive;
+$my_FontSize: 30px ;
+$my_Color: rgba(0, 22, 93, 0.7) ;
+$my_bgc: beige;
+body {
+  font-family: $main_family !important;
+  font-size: $my_FontSize;
+  color: $my_Color;
+  background-color: $my_bgc !important;
+}
+.logo_height{
+  height: 35px; width: 60px;
+}
