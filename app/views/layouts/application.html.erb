@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Appname</title>
+    <title>Our Sample</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://cdn.startbootstrap.com/sb-forms-latest.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" %>
+
+    <!-- Favicon-->
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <!-- Font Awesome icons (free version)-->
+    <%= javascript_include_tag "https://use.fontawesome.com/releases/v6.1.0/js/all.js" %>
+
+
+    <!-- Google fonts-->
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Montserrat:400,700', "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", 'https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <%= stylesheet_link_tag "index" %>
     <%= javascript_include_tag "sample_index" %>
 
     <%= stylesheet_link_tag "bootstrap", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "bootstrap" %>
+
   </head>
 
-  <body onload="currentTime()">
+  <body id="page-top" >
     <%= yield %>
   </body>
 </html>
